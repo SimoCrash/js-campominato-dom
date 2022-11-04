@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* HEAD */
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    height: 100px;
+}
+
+.logo-gioco {
+    height: 100%;
+    gap: 1rem;
+    display: flex;
+}
+
+.logo-gioco img {
+    max-width: 100%;
+}
+
+.logo-gioco h1 {
+    display: inline;
+    align-self: center;
+    font-size: 3rem;
+}
+
+.difficolta {
+    align-self: center;
+}
+
+.difficolta button {
+    padding: 5px 20px;
+}
+
+
+
+/* MAIN */
+
+.container-main {
+    background-color: #7FFFD4;
+    padding: 2rem;
+    flex: 1 0 auto;
+}
+
+.container-main h2 {
+    text-align: center;
+}
+
+.grid {
+    border: 1px solid black;
+    max-width: 70%;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    border: 1px solid black;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cell81 {
+    border: 1px solid black;
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cell49 {
+    border: 1px solid black;
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.active {
+    background-color: lightblue;
+}
+
+.hidden {
+    display: none;
+}
